@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Bold.otf') format('otf');
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cat_list {
+    width: 20%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    left: 0;
+    float: left;
+    .cat_title {
+        width: 80%;
+        height: 80px;
+        background-color: #FFF;
+        margin-left: 5%;
+        margin-top: 30px;
+        line-height: 80px;
+        text-align: center;
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        color: #3E79A2;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .cat_list {
+        width: 80%;
+        height: 500px;
+        background-color: #FFF;
+        margin-left: 5%;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        overflow: auto;
+        ul {
+            list-style: none;
+            li {
+                padding-left: 10%;
+                font-family: Circular Std;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                margin-top: 20px;
+                max-width: 250px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+.refund_list {
+    width: 80%;
+    height: calc(100vh - 80px);
+    margin-left: 20%;
+    float: left;
+    .refund_title {
+        width: 80%;
+        height: 80px;
+        background-color: #FFF;
+        margin-top: 30px;
+        line-height: 80px;
+        text-align: center;
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        color: #3E79A2;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .refund_table {
+        width: 80%;
+        height: 500px;
+        background-color: #F1F1F1;
+        margin-top: 10px;
+        overflow: auto;
+        ul {
+            list-style: none;
+            #title {
+                width: 100%;
+                height: 60px;
+                background-color: #FFF;
+                border-radius: 5px;
+                #div_td {
+                    height: 60px;
+                    font-family: Circular Std;
+                    font-style: normal;
+                    font-weight: bold;
+                    line-height: 60px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                #check_td_all {
+                    border-right: 1px solid #F1F1F1;
+                    width: 5%;
+                    #img1 {
+                        margin-left: 30%;
+                        margin-top: 15px;
+                    }
+                    #img2 {
+                        margin-left: 30%;
+                        margin-top: -20px;
+                    }
+                }
+                #check_tr {
+                    border-right: 1px solid #F1F1F1;
+                    width: 5%;
+                    #img1 {
+                        margin-left: 30%;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            #contents {
+                width: 100%;
+                height: 40px;
+                background-color: #FFF;
+                border-radius: 5px;
+                margin-top: 2px;
+                #div_td {
+                    height: 40px;
+                    line-height: 40px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-align: center;
+                }
+                #check_td {
+                    border-right: 1px solid #F1F1F1;
+                    width: 5%;
+                    #img1 {
+                        margin-left: 30%;
+                        margin-top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .selected{
+                #div_td {
+                    background-color: #D9EAF5;
+                }
+                #check_td {
+                    background-color: #66A5D0;
+                }
+
+            }
+        }
+    }
+}
